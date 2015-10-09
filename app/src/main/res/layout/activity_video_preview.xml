@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_video_vertical_margin"
+    android:paddingLeft="@dimen/activity_video_horizontal_margin"
+    android:paddingRight="@dimen/activity_video_horizontal_margin"
+    android:paddingTop="@dimen/activity_video_vertical_margin"
+    tools:context="com.snapooh.videoauthentication.VideoPreview"
+
+    >
+
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="8dp" />
+
+   <!-- <ImageView
+        android:id="@+id/textureImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher"
+
+        />
+
+    <ImageView
+        android:id="@+id/playView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textureView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:src="@android:drawable/ic_media_play" />
+
+
+
+    <LinearLayout
+        android:id="@+id/setThumbnailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textureView"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Set your video thumbnail"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:gravity="center"
+            android:text="Choose below"
+            android:textAppearance="?android:textAppearanceSmall"
+            />
+    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textureView"
+            android:layout_weight="1"
+            android:onClick="cancel"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/play"
+            android:layout_toRightOf="@id/play"
+            android:layout_weight="1"
+            android:onClick="confirm"
+            android:text="Confirm" />
+    </LinearLayout>
+    <!--<SeekBar
+        android:id="@+id/songProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout"
+
+        android:thumb="@mipmap/seek_handler"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"/>-->
+   <!-- <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/setThumbnailText"
+
+
+
+        />-->
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_below="@id/textureView"
+        android:layout_above="@id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="4dp"
+
+
+        />
+
+
+</RelativeLayout>

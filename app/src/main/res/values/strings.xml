@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">VideoAuthentication</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="preference_file_key">record</string>
+    <string name="saved_video_uri">video_uri</string>
+    <string name="encryptedText">Enter  encrypting text</string>
+    <string name="title_activity_video_preview">Video Preview</string>
+
+    <string-array name="days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+
+    </string-array>
+    <string name="title_activity_preview">Preview</string>
+</resources>
